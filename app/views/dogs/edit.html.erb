@@ -1,0 +1,9 @@
+<%= form_for @dog do |f| %>
+  <%= f.label :dog_name, 'Dog Name' %>
+  <%= f.text_field :dog_name, autofocus: 'autofocus' %>
+  <%= f.label :dog_breed, 'Dog Breed' %>
+  <%= f.text_field :dog_breed %>
+  <%= f.label :spay_neuter, 'Spayed/Neutered?' %>
+  <%= f.check_box :spay_neuter %>
+  <%= f.submit "Update Dog" %>
+<% end %>

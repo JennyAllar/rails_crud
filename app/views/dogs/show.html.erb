@@ -1,0 +1,12 @@
+<ul>
+  <li><%= @dog.dog_name %>
+<li><%= @dog.dog_breed %>
+<li><% if @dog.spay_neuter == true %>
+    <%='Spayed/Neutered' %>
+<% else %>
+  <%= 'Not Spayed/Neutered' %>
+  <% end %>
+</ul><br>
+
+<%= link_to 'Update Dog', edit_dog_path %>
+<%= link_to 'Delete Dog', dog_path, method:"delete" %>

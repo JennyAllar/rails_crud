@@ -1,0 +1,5 @@
+<%= link_to "Create Dog", new_dog_path %>
+
+<% @dogs.each do |dog| %>
+<%= link_to dog.dog_name, dog_path(dog) %>
+<% end %>

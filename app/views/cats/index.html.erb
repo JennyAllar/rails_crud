@@ -1,0 +1,5 @@
+<%= link_to "Create Cat", new_cat_path %>
+
+<% @cats.each do |cat| %>
+<%= link_to cat.cat_name, cat_path(cat) %>
+<% end %>

@@ -1,0 +1,9 @@
+<%= form_for @cat do |f| %>
+  <%= f.label :cat_name, "Cat Name" %>
+  <%= f.text_field :cat_name %>
+  <%= f.label :cat_color, "Cat Color" %>
+  <%= f.text_field :cat_color %>
+  <%= f.label :kittens, "Kittens" %>
+  <%= f.text_field :kittens %>
+  <%= f.submit "Update Cat" %>
+  <% end %>

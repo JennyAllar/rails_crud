@@ -1,0 +1,9 @@
+<%= form_for @city do |f| %>
+  <%= f.label :city_name, "City Name" %>
+  <%= f.text_field :city_name %>
+  <%= f.label :state, "State" %>
+  <%= f.text_field :state %>
+  <%= f.label :time_zone, "Please select a time zone" %>
+  <%= f.select(:time_zone, options_for_select(['Eastern', 'Central', 'Mountain', 'Pacific'])) %>
+  <%= f.submit "Add City" %>
+<% end %>
