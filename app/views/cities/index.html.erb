@@ -1,1 +1,6 @@
 <%= link_to "Create City", new_city_path %>
+
+<ul><% @cities.each do |city| %>
+ <li><b><%= link_to city.city_name, city_path(city) %>, <%= city.state %></b>
+<% end %>
+</ul>

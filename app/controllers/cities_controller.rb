@@ -1,7 +1,6 @@
 class CitiesController < ApplicationController
   def index
     @cities = City.all
-    @zones = { "Eastern" => 1, "Central" => 2, "Mountain" => 3, "Pacific" => 4 }
   end
   
   def new
@@ -10,6 +9,20 @@ class CitiesController < ApplicationController
   
   def create
     City.create(city_params)
+    redirect_to City
+  end
+  
+  def show
+    @city = City.find(params[:id])
+  end
+  
+  def edit
+    @city = City.find(params[:id])
+  end
+  
+  def update
+    @city = City.find(params[:id])
+    @city.update_attributes(city_params)
     redirect_to City
   end
   
