@@ -1,2 +1,3 @@
 <b><%= @city.city_name %>, <%= @city.state %></b> is in the <%= @city.time_zone %> Time Zone
 <%= link_to 'Edit City', edit_city_path %>
+<%= link_to 'Delete City', city_path, method:"delete" %>

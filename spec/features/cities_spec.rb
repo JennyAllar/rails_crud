@@ -47,6 +47,21 @@ feature 'cities functions' do
     
     expect(page).to have_content 'Phoenix'
     expect(page).to have_no_content 'Las Vegas'
-
+  end
+  
+  scenario 'user can delete a city' do
+    visit '/'
+    click_on 'Cities'
+    click_on 'Create City'
+    
+    fill_in 'City Name', with: 'Cancun'
+    fill_in 'State', with: 'Mexico'
+    select 'Mountain', :from => 'Please select a time zone'
+    click_on 'Add City'
+    expect(page).to have_content 'Cancun'
+    
+    click_on 'Cancun'
+    click_on 'Delete City'
+    expect(page).to have_no_content 'Cancun'
   end
 end
