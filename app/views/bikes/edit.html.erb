@@ -1,0 +1,9 @@
+<%= form_for @bike do |b| %>
+  <%= b.label :brand, "Brand" %>
+  <%= b.text_field :brand %>
+  <%= b.label :model, "Model" %>
+  <%= b.text_field :model %>
+  <%= b.label :color, "Color" %>
+  <%= b.text_field :color %>
+  <%= b.submit "Edit this Bike" %>
+<% end %>

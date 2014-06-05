@@ -1,0 +1,7 @@
+Welcome!
+
+<%= link_to "Add Bike", new_bike_path %>
+
+<% @bikes.each do |bike| %>
+<%= link_to bike.model, bike_path(bike)%>
+<% end %>

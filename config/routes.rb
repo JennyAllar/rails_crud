@@ -23,4 +23,6 @@ Rails.application.routes.draw do
   resources :dogs
   
   resources :cities
+  
+  resources :bikes
 end
