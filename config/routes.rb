@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  
+  get '/', to: 'welcome#index'
 
+  devise_for :users
   root 'welcome#index'
   
   get '/cats', to: 'cats#index'
