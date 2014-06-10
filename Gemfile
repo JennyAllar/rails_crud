@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'activerecord', '~> 4.1.0'
 gem 'devise', '~> 3.2.4'
+gem 'gritter', '1.1.0'
 
 gem 'jquery-rails'
 gem 'turbolinks'
