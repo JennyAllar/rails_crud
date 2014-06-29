@@ -28,4 +28,6 @@ Rails.application.routes.draw do
   resources :cities
   
   resources :bikes
+  
+  resources :messages
 end

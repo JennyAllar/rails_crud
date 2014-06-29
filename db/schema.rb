@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140609034248) do
+ActiveRecord::Schema.define(version: 20140629045403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,10 @@ ActiveRecord::Schema.define(version: 20140609034248) do
     t.string  "dog_name"
     t.string  "dog_breed"
     t.boolean "spay_neuter"
+  end
+
+  create_table "messages", force: true do |t|
+    t.string "content"
   end
 
   create_table "users", force: true do |t|
