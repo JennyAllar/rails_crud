@@ -3,6 +3,13 @@ require_relative '../spec_helper'
 feature 'cities functions' do
   scenario 'user can add city' do
     visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
+    visit '/'
     click_on 'Cities'
     click_on 'Create City'
 
@@ -14,6 +21,13 @@ feature 'cities functions' do
   end
   
   scenario 'user can view a city' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/'
     click_on 'Cities'
     click_on 'Create City'
@@ -30,6 +44,13 @@ feature 'cities functions' do
   end
   
   scenario 'user can edit a city' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/'
     click_on 'Cities'
     click_on 'Create City'
@@ -50,6 +71,13 @@ feature 'cities functions' do
   end
   
   scenario 'user can delete a city' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/'
     click_on 'Cities'
     click_on 'Create City'

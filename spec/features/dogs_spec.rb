@@ -2,6 +2,13 @@ require_relative '../spec_helper'
 
 feature 'Dog functions' do
   scenario 'user can create a dog' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/dogs'
     click_link 'Create Dog'
     
@@ -14,6 +21,13 @@ feature 'Dog functions' do
   end
   
   scenario 'user can view a dog' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/dogs'
     click_link 'Create Dog'
     
@@ -30,6 +44,13 @@ feature 'Dog functions' do
   end
   
   scenario 'user can edit a dog' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/'
     click_link 'Dogs'
     click_link 'Create Dog'
@@ -50,6 +71,13 @@ feature 'Dog functions' do
   end
   
   scenario 'user can delete a dog' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/'
     click_link 'Dogs'
     click_link 'Create Dog'

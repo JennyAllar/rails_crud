@@ -1,7 +1,15 @@
 require_relative '../spec_helper'
 
 feature 'create an index page' do
+  
   scenario 'user can add a cat' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/cats'
     click_on 'Create Cat'
 
@@ -15,6 +23,13 @@ feature 'create an index page' do
   end
 
   scenario 'user can view the details of a cat' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/cats'
 
     expect(page).to have_no_content('Apollo')
@@ -32,6 +47,13 @@ feature 'create an index page' do
   end
 
   scenario 'user can view the details of a cat' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/cats'
 
     expect(page).to have_no_content('Marley')
@@ -53,6 +75,13 @@ feature 'create an index page' do
   end
   
   scenario 'user can delete a cat' do
+    visit '/'
+    click_on 'Sign up'
+
+    fill_in 'Email', with: 'Jenny@jenny.com'
+    fill_in 'Password', with: 'jennyjenny1'
+    fill_in 'Password confirmation', with: 'jennyjenny1'
+    click_on 'Sign up'
     visit '/cats'
     click_on 'Create Cat'
     
