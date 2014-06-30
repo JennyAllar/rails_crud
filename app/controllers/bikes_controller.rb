@@ -20,11 +20,12 @@ class BikesController < ApplicationController
   def edit
     @bike = Bike.find(params[:id])
   end
-  
+
+  respond_to :html, :json
   def update
     @bike = Bike.find(params[:id])
     @bike.update_attributes(bike_params)
-    redirect_to bike_path(@bike)
+    respond_with @bike
   end
   
   def destroy
